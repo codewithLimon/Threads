@@ -1,0 +1,19 @@
+
+You are tasked with implementing a simple simulation of bank transactions using Java threads. You need to create a BankAccount class
+that represents a bank account and has methods for depositing, withdrawing and getting the current balance. You also need to create a
+BankTransition class that represents a bank transaction and has a reference to a BankAccount Object, a boolean flag to indicate if it is
+a deposit or withdrawal and an amount for the transaction.
+
+
+ Using the above classes, you need to create a BankSimulation Class that creates  three threads, each represnting a bank transaction.
+ The three threads should be started and executed concurrently, and each should access
+the shared BankAccount Object to perform the transaction. The BankTransaction class should be synchronized on the BankAccount object to ensure
+that only one transaction is executed at a time.
+
+The initial balance of the bankAccount should be 1000, the first transacion should be a deposit
+of 500, second transaction should be a withdrawal of 800 and the third transaction should be a deposit of 300. The final amount in the account
+should be 1000.
+
+After all threads have completed, the BankSimulation class should print the final balance of the bank account.
+
+Write the java code for the BankAccount, BankTransaction, and BankSimulation classes to simulate the bank transactions.
